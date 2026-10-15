@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Feliz Dia dos Professores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<div id="intro">
+  <div class="spot"></div><div class="valance"></div>
+  <div class="panel l"></div><div class="panel r"></div>
+  <div class="stage">
+    <div class="term" role="img" aria-label="Terminal digitando Olá, professores">
+      <div class="bar"><i></i><i></i><i></i></div>
+      <pre id="type"></pre>
+    </div>
+    <button class="btn" id="go">🎭 Abrir as cortinas</button>
+  </div>
+</div>
+
+<header>
+  <div>
+    <svg class="mascot rise" viewBox="0 0 300 300" role="img" aria-label="Computador animado com capelo de formatura acenando">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7c6cf0"/><stop offset="1" stop-color="#4a3fb8"/></linearGradient></defs>
+      <rect x="86" y="258" width="128" height="14" rx="7" fill="#3a2f93"/><rect x="136" y="226" width="28" height="36" fill="#3a2f93"/>
+      <rect x="52" y="64" width="196" height="166" rx="26" fill="url(#g)" stroke="#f6f1e3" stroke-width="6"/>
+      <rect x="72" y="84" width="156" height="126" rx="14" fill="#0d0b1f"/>
+      <g class="eye"><ellipse cx="116" cy="136" rx="13" ry="17" fill="#5eead4"/><circle cx="120" cy="130" r="5" fill="#0d0b1f"/></g>
+      <g class="eye"><ellipse cx="184" cy="136" rx="13" ry="17" fill="#5eead4"/><circle cx="188" cy="130" r="5" fill="#0d0b1f"/></g>
+      <path d="M118 170 Q150 204 182 170" fill="none" stroke="#5eead4" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="94" cy="168" r="9" fill="#ff6b8b" opacity=".55"/><circle cx="206" cy="168" r="9" fill="#ff6b8b" opacity=".55"/>
+      <polygon points="150,16 238,46 150,76 62,46" fill="#14122b" stroke="#f6f1e3" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M104 62 v18 q46 18 92 0 v-18" fill="#221e4a" stroke="#f6f1e3" stroke-width="4"/>
+      <g class="tassel"><path d="M196 40 v38" stroke="#ffb547" stroke-width="4"/><circle cx="196" cy="84" r="7" fill="#ffb547"/></g>
+      <g class="arm"><path d="M238 150 q38 -4 40 -44" fill="none" stroke="#f6f1e3" stroke-width="9" stroke-linecap="round"/><circle cx="278" cy="98" r="14" fill="#ffb547" stroke="#f6f1e3" stroke-width="4"/></g>
+      <path d="M62 150 q-34 10 -34 40" fill="none" stroke="#f6f1e3" stroke-width="9" stroke-linecap="round"/><circle cx="28" cy="196" r="12" fill="#ffb547" stroke="#f6f1e3" stroke-width="4"/>
+      <path class="sparkle" d="M20 40 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5z" fill="#ffb547"/>
+      <path class="sparkle" style="animation-delay:-.9s" d="M270 210 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4z" fill="#5eead4"/>
+    </svg>
+    <h1 id="title" aria-label="Feliz Dia dos Professores!"></h1>
+    <p class="sub rise" style="--d:1.2s">Cada um de vocês nos ensinou uma coisa diferente. Clique no seu nome e leia o que você deixou em nós.</p>
+    <div class="profs" id="profs"></div>
+    <div class="hint rise" style="--d:2.2s">👆 Professor, clique no seu nome para ler a sua carta</div>
+  </div>
+</header>
+
+<main id="panel"><p class="empty">A carta do professor que você escolher aparece aqui.</p></main>
+
+<footer>
+  <figure class="duo big"><img id="fphoto" alt="David Capulot e Daniel Holanda sorrindo no laboratório de informática"><figcaption>David Capulot e Daniel Holanda</figcaption></figure>
+  <p class="fred">Feliz Dia dos Professores! <span class="heart">💙</span></p>
+  <p>Obrigados por cada aula, cada ideia e cada “tenta de novo”.<br>Seus alunos David Capulot e Daniel Holanda</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
